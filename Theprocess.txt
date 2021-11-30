@@ -1,0 +1,249 @@
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch index.js
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch index.html
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch main.css
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ ls
+index.html  index.js  main.css
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.js
+        main.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add .
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   main.css
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git rm --cached index.js
+rm 'index.js'
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add index.js
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   main.css
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch notepad.txt
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ notepad.txt
+bash: notepad.txt: command not found
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ notepad notepad.txt
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add notepad.txt
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   main.css
+        new file:   notepad.txt
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ cd
+
+Blessing@Blessing MINGW64 ~
+$ cd ThisisFun
+
+Blessing@Blessing MINGW64 ~/ThisisFun
+$ cd Fun
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git commit -m "I am having Fun"
+[master (root-commit) dab2e78] I am having Fun
+ 4 files changed, 88 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index.js
+ create mode 100644 main.css
+ create mode 100644 notepad.txt
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git log
+commit dab2e78181d0ccc32a7f123db5fd02dd591f394f (HEAD -> master)
+Author: ArogboTobou <95247891+ArogboTobou@users.noreply.github.com>
+Date:   Tue Nov 30 10:40:21 2021 -0800
+
+    I am having Fun
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git show  dab2e78181d0ccc32a7f123db5fd02dd591f394f
+commit dab2e78181d0ccc32a7f123db5fd02dd591f394f (HEAD -> master)
+Author: ArogboTobou <95247891+ArogboTobou@users.noreply.github.com>
+Date:   Tue Nov 30 10:40:21 2021 -0800
+
+    I am having Fun
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/index.js b/index.js
+new file mode 100644
+index 0000000..e69de29
+diff --git a/main.css b/main.css
+new file mode 100644
+index 0000000..e69de29
+diff --git a/notepad.txt b/notepad.txt
+new file mode 100644
+index 0000000..9b384d9
+--- /dev/null
++++ b/notepad.txt
+@@ -0,0 +1,88 @@
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ git add
++Nothing specified, nothing added.
++hint: Maybe you wanted to say 'git add .'?
++hint: Turn this message off by running
++hint: "git config advice.addEmptyPathspec false"
++
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ touch index.js
++
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ touch index.html
++
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ touch main.css
++
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ ls
++index.html  index.js  main.css
++
++Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
++$ git status
++On branch master
++
++No commits yet
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ q
+bash: q: command not found
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git log
+commit dab2e78181d0ccc32a7f123db5fd02dd591f394f (HEAD -> master)
+Author: ArogboTobou <95247891+ArogboTobou@users.noreply.github.com>
+Date:   Tue Nov 30 10:40:21 2021 -0800
+
+    I am having Fun
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ ls
+index.html  index.js  main.css  notepad.txt
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ vi main.css
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add .
+warning: LF will be replaced by CRLF in main.css.
+The file will have its original line endings in your working directory
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git commit -m "trying to modify"
+[master 629dc51] trying to modify
+ 1 file changed, 3 insertions(+)
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git log
+commit 629dc51fb5d20cb7e675b877f9e2bfba07e4bcfe (HEAD -> master)
+Author: ArogboTobou <95247891+ArogboTobou@users.noreply.github.com>
+Date:   Tue Nov 30 10:51:10 2021 -0800
+
+    trying to modify
+
+commit dab2e78181d0ccc32a7f123db5fd02dd591f394f
+Author: ArogboTobou <95247891+ArogboTobou@users.noreply.github.com>
+Date:   Tue Nov 30 10:40:21 2021 -0800
+
+    I am having Fun
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch Theprocess.txt
