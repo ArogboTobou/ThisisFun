@@ -1,0 +1,88 @@
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch index.js
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch index.html
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ touch main.css
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ ls
+index.html  index.js  main.css
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.js
+        main.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add .
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   main.css
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git rm --cached index.js
+rm 'index.js'
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git add index.js
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   index.js
+        new file:   main.css
+
+
+Blessing@Blessing MINGW64 ~/ThisisFun/Fun (master)
+$
