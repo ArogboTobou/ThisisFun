@@ -1,1 +1,3 @@
-Function mannie(ysyes)
+package main
+
+func main() {}
